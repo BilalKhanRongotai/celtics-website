@@ -23,7 +23,10 @@ body {
     margin: 20px 20px;
     line-height: 1.4em;
     text-align: center;
-    
+    background-image: url(background\ contact.PNG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: lighten;
     
 }
 
@@ -61,7 +64,7 @@ body {
 
 .main-nav a:hover {
     background: green;
-    color: greenyellow;
+    color: black;
     border: solid;
     text-align: center;
     background-image: url(cover\ celtics.png);
@@ -122,22 +125,21 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 50px 1fr;
     grid-template-areas: "grid-head grid-head grid-head" "grid-main grid-main grid-main" "grid-main grid-main grid-main" "grid-footer grid-footer grid-footer";
-    height: 100vh;
-    margin: 1em; 
+  
 
 }
 
 section.grid-head {
     grid-area: grid-head;
-    background: greenyellow;
+    
     border-radius: 25px 25px 0px 0px;
 }
 
 section.grid-main {
     grid-area: grid-main;
-    background: goldenrod;
+  
     background-image: url();
     object-fit: none;
     background-position: left;
@@ -153,7 +155,7 @@ section.grid-main {
 
 section.grid-footer {
     grid-area: grid-footer;
-    background: yellowgreen;
-    border: solid;
+    
+   
 
 }
